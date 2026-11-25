@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-25T15:00:21Z",
+  "snapshotUpdatedAt": "2026-11-25T15:30:26Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -17528,8 +17528,8 @@
       "id": "kernel-1684",
       "workstream": "kernel",
       "title": "Networking · Implement cleanup",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
