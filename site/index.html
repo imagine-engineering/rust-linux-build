@@ -64,6 +64,11 @@
         </div>
         <p class="result-count" id="intake-message" role="status" hidden></p>
         <div id="task-list"><p class="empty">Loading reviewed tasks…</p></div>
+        <nav class="pagination" id="task-pages" aria-label="Task pages" hidden>
+          <button class="control" type="button" id="previous-page">Previous</button>
+          <span id="page-number" aria-live="polite"></span>
+          <button class="control" type="button" id="next-page">Next</button>
+        </nav>
         <noscript><p class="empty">Enable JavaScript to browse the tasks or <a href="./data/snapshot.json">open the snapshot JSON</a>.</p></noscript>
       </section>
     </div>

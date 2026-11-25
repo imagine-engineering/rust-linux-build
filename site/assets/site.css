@@ -160,3 +160,6 @@ dialog .task-badges { justify-content: flex-start; margin-top: .9rem; }
   .identity .mark { display: none; }
   .clear { font-size: .79rem; padding-inline: .25rem; }
 }
+
+.pagination { display: flex; align-items: center; justify-content: space-between; gap: .6rem; padding: .8rem .45rem; color: var(--muted); font-size: .8rem; }
+.pagination button:disabled { opacity: .48; }

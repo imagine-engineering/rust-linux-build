@@ -24,6 +24,8 @@ let snapshot;
 let filter = readFilters(new URLSearchParams(location.search));
 let contributions = null;
 let detailTrigger;
+let currentPage = 0;
+const pageSize = 50;
 const workstreamControls = new Map();
 const stageControls = new Map();
 const flagControls = new Map();
@@ -89,6 +91,7 @@ function choice(select, data, all) {
 }
 
 function update(changes) {
+  currentPage = 0;
   filter = { ...filter, ...changes };
   const url = new URL(location.href);
   writeFilters(url.searchParams, filter);
@@ -160,7 +163,11 @@ function showDetail(task, trigger) {
   detailTrigger = trigger;
   get("detail-meta").textContent = `${task.id} · ${workstreams[task.workstream]}`;
   get("detail-title").textContent = task.title;
-  get("detail-summary").textContent = task.summary;
+  const summary = get("detail-summary");
+  summary.textContent = task.summary ?? "";
+  summary.hidden = !task.summary;
+  if (task.summary) dialog.setAttribute("aria-describedby", summary.id);
+  else dialog.removeAttribute("aria-describedby");
   get("detail-badges").replaceChildren(...badges(task));
   const links = get("detail-links");
   const publicLinks = task.links.map(({ label, url }) => [label, url]);
@@ -226,11 +233,21 @@ function render() {
   clear.disabled = Object.keys(defaults).every(key => filter[key] === defaults[key]) &&
     (!contributions || (contributor.value === "all" && issueLabel.value === "all"));
 
-  get("result").textContent = `Showing ${matches.length} of ${total} ${total === 1 ? "task" : "tasks"}`;
+  const pageCount = Math.ceil(matches.length / pageSize);
+  currentPage = Math.min(currentPage, Math.max(0, pageCount - 1));
+  const first = currentPage * pageSize;
+  const pageMatches = matches.slice(first, first + pageSize);
+  get("task-pages").hidden = pageCount < 2;
+  get("previous-page").disabled = currentPage === 0;
+  get("next-page").disabled = currentPage >= pageCount - 1;
+  get("page-number").textContent = `Page ${currentPage + 1} of ${pageCount}`;
+  get("result").textContent = pageCount > 1
+    ? `Showing ${first + 1}–${first + pageMatches.length} of ${matches.length} matching tasks`
+    : `Showing ${matches.length} of ${total} ${total === 1 ? "task" : "tasks"}`;
   if (matches.length) {
     const rows = element("ul");
     rows.setAttribute("role", "list");
-    rows.append(...matches.map(renderRow));
+    rows.append(...pageMatches.map(renderRow));
     list.replaceChildren(rows);
   } else {
     const text = snapshot.tasks.length ? "No tasks match these filters." : "No reviewed tasks have been published yet.";
@@ -239,6 +256,13 @@ function render() {
 }
 
 function wireControls() {
+  for (const [id, delta] of [["previous-page", -1], ["next-page", 1]]) {
+    get(id).addEventListener("click", () => {
+      currentPage += delta;
+      render();
+      list.querySelector("button")?.focus();
+    });
+  }
   choice(statusFilter, labels, "All statuses");
   choice(verificationFilter, verificationFilters, "All verification");
   for (const field of [search, statusFilter, verificationFilter]) field.disabled = false;
@@ -251,6 +275,7 @@ function wireControls() {
     search.focus();
   });
   window.addEventListener("popstate", () => {
+    currentPage = 0;
     const params = new URLSearchParams(location.search);
     filter = readFilters(params);
     if (contributions) restoreIntake(params);

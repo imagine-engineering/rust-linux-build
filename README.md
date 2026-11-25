@@ -18,7 +18,7 @@ Reconcile evidence against the applicable task, workstream, commit, and verifica
 
 ## Refresh the public snapshot
 
-The private refresh verifies the governing task and evidence against the owning repository. It can update implementation stage and the separately recorded host and target verification of the three approved task IDs. Its output is restricted to the public snapshot schema and a single compare-and-swap update of `site/data/snapshot.json`.
+The private refresh verifies the governing task and evidence against the owning repository. It can update implementation stage and the separately recorded host and target verification for approved task IDs. Its output is restricted to the public snapshot schema and a single compare-and-swap update of `site/data/snapshot.json`.
 
 New rows, public wording, links, blocker flags, and design labels require separate review. The approved public task IDs remain stable. The private workflow records failures and leaves the last successful Pages deployment available. Replaying a refresh uses the current private records and the current public file.
 

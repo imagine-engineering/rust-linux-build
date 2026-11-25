@@ -3,7 +3,7 @@ export const statuses = {
   implemented: "Implemented", "in-progress": "In progress", todo: "To do", unclear: "Status unclear",
 };
 export const verificationStates = {
-  "not-run": "Verification not run",
+  "not-run": "Not run",
   "host-checked": "Host checks passed",
   "target-verified": "Target verified",
   failed: "Verification failed",
@@ -98,13 +98,14 @@ export function validateSnapshot(snapshot) {
   }
   const seen = new Set();
   for (const task of snapshot.tasks) {
-    const keys = ["id", "workstream", "title", "summary", "status", "blocked", "verification", "design", "links"];
+    const keys = ["id", "workstream", "title", "status", "blocked", "verification", "design", "links"];
+    if (task && Object.hasOwn(task, "summary")) keys.push("summary");
     if (task && Object.hasOwn(task, "targetVerification")) keys.push("targetVerification");
     if (!objectWithKeys(task, keys) ||
         (keys.includes("targetVerification") && !["not-run", "verified", "failed"].includes(task.targetVerification)) ||
         !Object.hasOwn(workstreams, task.workstream) || typeof task.id !== "string" ||
         !/^(kernel|server|desktop)-\d{3,6}$/u.test(task.id) || !task.id.startsWith(task.workstream + "-") || seen.has(task.id) ||
-        !validText(task.title, 110) || !validText(task.summary, 360) ||
+        !validText(task.title, 110) || (keys.includes("summary") && !validText(task.summary, 360)) ||
         !Object.hasOwn(statuses, task.status) || typeof task.blocked !== "boolean" ||
         (task.blocked && task.status === "implemented") ||
         !Object.hasOwn(verificationStates, task.verification) ||

@@ -72,3 +72,10 @@ test("displays explicit target evidence independently of host verification", () 
   assert.equal(taskView([both], { ...defaults, verification: "target-verified" }).matches.length, 1);
   assert.equal(taskView([host], { ...defaults, q: host.summary }).matches.length, 0);
 });
+
+test("accepts a title-only row from the approved expansion", () => {
+  const { summary, ...row } = tasks[0];
+  assert.doesNotThrow(() => validateSnapshot({ ...document, tasks: [row] }));
+  assert.throws(() => validateSnapshot({ ...document, tasks: [{ ...row, scope: "private" }] }));
+  assert.throws(() => validateSnapshot({ ...document, tasks: [{ ...row, task: "private:1.1" }] }));
+});
