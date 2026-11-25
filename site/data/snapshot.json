@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-25T16:57:50Z",
+  "snapshotUpdatedAt": "2026-11-25T17:32:39Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -15468,8 +15468,8 @@
       "id": "kernel-1469",
       "workstream": "kernel",
       "title": "x86 module loading · Define core behavior",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
