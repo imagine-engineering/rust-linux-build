@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-25T14:21:22Z",
+  "snapshotUpdatedAt": "2026-11-25T14:27:42Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -19499,8 +19499,8 @@
       "id": "kernel-1944",
       "workstream": "kernel",
       "title": "System calls · Implement interface compatibility",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
