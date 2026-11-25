@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-25T21:22:56Z",
+  "snapshotUpdatedAt": "2026-11-25T21:29:24Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -10288,8 +10288,8 @@
       "id": "kernel-942",
       "workstream": "kernel",
       "title": "Filesystem interfaces · Verify design options",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
