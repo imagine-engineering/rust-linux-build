@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Reviewed development progress across the Rust Linux Kernel, Server, and Desktop workstreams.">
+  <meta name="theme-color" content="#10151b">
+  <title>Rust Linux Build</title>
+  <link rel="stylesheet" href="./assets/site.css">
+  <script type="module" src="./assets/dashboard.mjs"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="top">
+    <div class="frame top-inner">
+      <a href="./" class="brand"><span class="brand-mark" aria-hidden="true">RL</span><span>Rust Linux Build</span></a>
+      <a href="https://github.com/imagine-engineering/rust-linux-build" class="repo">GitHub repository</a>
+    </div>
+  </header>
+  <main class="frame" id="main">
+    <div class="intro">
+      <div>
+        <h1>Project progress</h1>
+        <p>Track reviewed work across Kernel, Server, and Desktop.</p>
+      </div>
+      <p class="date" id="snapshot-date">Loading snapshot…</p>
+    </div>
+
+    <section aria-labelledby="progress-title">
+      <h2 class="visually-hidden" id="progress-title">Implementation progress</h2>
+      <div class="metrics" id="metrics">
+        <button type="button" data-status="implemented" class="metric implemented" aria-pressed="false" disabled><span class="metric-label">Implemented</span><strong>—</strong></button>
+        <button type="button" data-status="in-progress" class="metric in-progress" aria-pressed="false" disabled><span class="metric-label">In progress</span><strong>—</strong></button>
+        <button type="button" data-status="todo" class="metric todo" aria-pressed="false" disabled><span class="metric-label">To do</span><strong>—</strong></button>
+      </div>
+    </section>
+
+    <section class="workspace" aria-labelledby="tasks-title">
+      <div class="workstream">
+        <h2 id="tasks-title">Tasks</h2>
+        <fieldset id="workstream-picker" aria-label="Workstream" disabled>
+          <label><input type="radio" name="workstream" value="all" checked><span>All workstreams</span></label>
+          <label><input type="radio" name="workstream" value="kernel"><span>Kernel</span></label>
+          <label><input type="radio" name="workstream" value="server"><span>Server</span></label>
+          <label><input type="radio" name="workstream" value="desktop"><span>Desktop</span></label>
+        </fieldset>
+      </div>
+
+      <div class="toolbar">
+        <label class="search">
+          <span class="visually-hidden">Search tasks</span>
+          <input type="search" id="search" placeholder="Search tasks" autocomplete="off" disabled>
+        </label>
+        <label class="select-field">
+          <span class="visually-hidden">Status</span>
+          <select id="status-filter" disabled>
+            <option value="all">All statuses</option>
+            <option value="implemented">Implemented</option>
+            <option value="in-progress">In progress</option>
+            <option value="todo">To do</option>
+            <option value="blocked">Blocked</option>
+            <option value="unclear">Status unclear</option>
+          </select>
+        </label>
+        <label class="select-field">
+          <span class="visually-hidden">Verification</span>
+          <select id="verification-filter" disabled>
+            <option value="all">All verification</option>
+            <option value="not-run">Not run</option>
+            <option value="host-checked">Host checks passed</option>
+            <option value="target-verified">Target verified</option>
+            <option value="failed">Verification failed</option>
+            <option value="unknown">Verification unclear</option>
+          </select>
+        </label>
+        <button class="reset" id="clear" type="button" disabled>Clear filters</button>
+      </div>
+      <p class="result" id="result" role="status"></p>
+      <div class="task-list" id="task-list" aria-label="Task list">
+        <div class="empty">Loading reviewed tasks…</div>
+      </div>
+      <noscript><p class="empty">Enable JavaScript to browse the task list or <a href="./data/snapshot.json">open the snapshot JSON</a>.</p></noscript>
+    </section>
+  </main>
+  <footer class="frame footer">
+    <span>Counts cover tasks approved for this public snapshot.</span>
+    <a href="./data/snapshot.json">Snapshot JSON</a>
+  </footer>
+
+  <template id="task-template">
+    <li class="task">
+      <div class="task-main"><h3></h3><p></p><div class="links" hidden></div></div>
+      <div class="task-status"><span class="primary pill"></span><span class="blocked pill" hidden>Blocked</span></div>
+      <div class="task-evidence"><span class="verification"></span><span class="design"></span></div>
+    </li>
+  </template>
+</body>
+</html>

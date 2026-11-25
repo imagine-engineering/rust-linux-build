@@ -1,0 +1,39 @@
+{
+  "schema": "rust-linux-build.snapshot/v1",
+  "snapshotUpdatedAt": "2026-11-25T11:43:22Z",
+  "tasks": [
+    {
+      "id": "kernel-001",
+      "title": "Rust scheduler runqueue guards",
+      "summary": "The Rust runqueue guard code was written and passed host fixture checks. Target verification is pending.",
+      "status": "implemented",
+      "verification": "host-checked",
+      "blocked": false,
+      "design": null,
+      "links": [],
+      "workstream": "kernel"
+    },
+    {
+      "id": "server-001",
+      "title": "Build the shared userspace base",
+      "summary": "Pin and build the common userspace base used by Server and Desktop.",
+      "status": "todo",
+      "verification": "not-run",
+      "blocked": false,
+      "design": null,
+      "links": [],
+      "workstream": "server"
+    },
+    {
+      "id": "desktop-001",
+      "title": "Validate the first Wayland workspace",
+      "summary": "Pin the Linux desktop workspace and validate an editable input on Wayland.",
+      "status": "todo",
+      "verification": "not-run",
+      "blocked": false,
+      "design": null,
+      "links": [],
+      "workstream": "desktop"
+    }
+  ]
+}
