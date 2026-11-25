@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-25T15:36:22Z",
+  "snapshotUpdatedAt": "2026-11-25T15:38:53Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -168,8 +168,8 @@
       "id": "kernel-072",
       "workstream": "kernel",
       "title": "Kernel integration · Implement core behavior",
-      "status": "unclear",
-      "verification": "unknown",
+      "status": "implemented",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
