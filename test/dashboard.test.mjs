@@ -60,3 +60,15 @@ test("rejects private or unsafe links and fields outside the public schema", () 
   const task = { ...tasks[0], design: null, links: [{ label: "Doc", url: "https://github.com/imagine-engineering/rust-linux-build/blob/main/README.md" }] };
   assert.doesNotThrow(() => validateSnapshot({ ...document, tasks: [task] }));
 });
+
+test("displays explicit target evidence independently of host verification", () => {
+  const host = { ...tasks[0], targetVerification: "not-run" };
+  const both = { ...host, targetVerification: "verified" };
+  assert.doesNotThrow(() => validateSnapshot({ ...document, tasks: [host] }));
+  assert.throws(() => validateSnapshot({ ...document, tasks: [{ ...host, targetVerification: "pending-raw" }] }));
+  assert.equal(taskView([host], { ...defaults, verification: "host-checked" }).matches.length, 1);
+  assert.equal(taskView([host], { ...defaults, verification: "target-not-run" }).matches.length, 1);
+  assert.equal(taskView([host], { ...defaults, verification: "target-verified" }).matches.length, 0);
+  assert.equal(taskView([both], { ...defaults, verification: "target-verified" }).matches.length, 1);
+  assert.equal(taskView([host], { ...defaults, q: host.summary }).matches.length, 0);
+});

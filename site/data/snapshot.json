@@ -5,7 +5,7 @@
     {
       "id": "kernel-001",
       "title": "Rust scheduler runqueue guards",
-      "summary": "The Rust runqueue guard code was written and passed host fixture checks. Target verification is pending.",
+      "summary": "Rust runqueue guards for scheduler state transitions.",
       "status": "implemented",
       "verification": "host-checked",
       "blocked": false,

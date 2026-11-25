@@ -9,6 +9,10 @@ export const verificationStates = {
   failed: "Verification failed",
   unknown: "Verification unclear",
 };
+export const targetVerificationStates = {
+  "target-not-run": "Target checks not run", "target-failed": "Target checks failed",
+};
+export const verificationFilters = { ...verificationStates, ...targetVerificationStates };
 export const designStates = {
   ready: "Design ready", conditional: "Design conditional",
   incomplete: "Design incomplete", unknown: "Design readiness unclear",
@@ -24,7 +28,7 @@ export function readFilters(params) {
   return {
     workstream: withFallback(params.get("workstream"), workstreams),
     status: withFallback(params.get("status"), statusOptions),
-    verification: withFallback(params.get("verification"), verificationStates),
+    verification: withFallback(params.get("verification"), verificationFilters),
     q: (params.get("q") ?? "").slice(0, 160),
   };
 }
@@ -35,6 +39,11 @@ export function writeFilters(params, filters) {
     else params.set(key, filters[key]);
   }
   return params;
+}
+
+export function matchesVerification(task, verification) {
+  return verification === "all" || task.verification === verification ||
+    (task.targetVerification ? "target-" + task.targetVerification === verification : false);
 }
 
 export function taskView(tasks, filters) {
@@ -48,8 +57,8 @@ export function taskView(tasks, filters) {
   const matches = scoped.filter(task => {
     const statusMatches = filters.status === "all" ||
       (filters.status === "blocked" ? task.blocked : task.status === filters.status);
-    const verificationMatches = filters.verification === "all" || task.verification === filters.verification;
-    const text = [task.id, task.title, task.summary, workstreams[task.workstream]].join(" ").toLowerCase();
+    const verificationMatches = matchesVerification(task, filters.verification);
+    const text = [task.id, task.title].join(" ").toLowerCase();
     return statusMatches && verificationMatches && words.every(word => text.includes(word));
   });
   return { matches, counts, total: scoped.length };
@@ -89,7 +98,10 @@ export function validateSnapshot(snapshot) {
   }
   const seen = new Set();
   for (const task of snapshot.tasks) {
-    if (!objectWithKeys(task, ["id", "workstream", "title", "summary", "status", "blocked", "verification", "design", "links"]) ||
+    const keys = ["id", "workstream", "title", "summary", "status", "blocked", "verification", "design", "links"];
+    if (task && Object.hasOwn(task, "targetVerification")) keys.push("targetVerification");
+    if (!objectWithKeys(task, keys) ||
+        (keys.includes("targetVerification") && !["not-run", "verified", "failed"].includes(task.targetVerification)) ||
         !Object.hasOwn(workstreams, task.workstream) || typeof task.id !== "string" ||
         !/^(kernel|server|desktop)-\d{3,6}$/u.test(task.id) || !task.id.startsWith(task.workstream + "-") || seen.has(task.id) ||
         !validText(task.title, 110) || !validText(task.summary, 360) ||

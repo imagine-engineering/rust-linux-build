@@ -18,13 +18,11 @@ Reconcile evidence against the applicable task, workstream, commit, and verifica
 
 ## Refresh the public snapshot
 
-1. In the private environment, load the current milestone and task specs from the planning checkout. Join their task IDs with the owning implementation checkout, reviewed receipts, handoffs, and test records. Record each task once. Resolve conflicts and check one representative row per workstream against its source.
-2. Prepare a small candidate from the approved tasks. Assign each task a stable public alias. Keep the alias mapping, provenance, raw records, and both source checkouts in the private environment.
-3. Review the exact outbound task IDs, titles, summaries, statuses, verification and design labels, links, and UTC timestamp. Approve the public wording and link targets. Check links in a signed-out session. The initial link allowlist accepts only this public repository. Update it with separately reviewed public locations if needed.
-4. Copy the reviewed export to `site/data/snapshot.json`. Run `node --test` and `node scripts/build.mjs`. Review the staged JSON diff and commit it to `main` through the normal repository workflow.
-5. Check the Pages deployment run and open the public site. Confirm the updated timestamp, one row from each included workstream, and the new counts. GitHub Actions packages only the static site files listed in the build script.
+The private refresh verifies the governing task and evidence against the owning repository. It can update implementation stage and the separately recorded host and target verification of the three approved task IDs. Its output is restricted to the public snapshot schema and a single compare-and-swap update of `site/data/snapshot.json`.
 
-The strict snapshot schema is defined in `site/assets/model.mjs`. Snapshot timestamps are UTC with second precision. The refresh is driven by reviewed commits. This keeps source credentials and access out of the public workflow.
+New rows, public wording, links, blocker flags, and design labels require separate review. The approved public task IDs remain stable. The private workflow records failures and leaves the last successful Pages deployment available. Replaying a refresh uses the current private records and the current public file.
+
+For public changes, review the exact snapshot diff, run `node --test` and `node scripts/build.mjs`, and check the Pages workflow and signed-out site after merging. Times are UTC. The snapshot timestamp advances when the private publisher changes an approved field.
 
 ## Local development
 
@@ -32,4 +30,6 @@ Use Node.js 24 or newer. Run `node --test`, then `node scripts/build.mjs`. Serve
 
 ## Contributions
 
-When public intake opens, add a separate Contributions view for public GitHub Issues, labels, and linked pull requests. Link to a snapshot task through its explicit public task ID. GitHub state governs contribution intake. Implementation progress continues to follow the spec and evidence process above.
+Public intake requires both Issues enabled in repository settings and a reviewed change to set `enabled` in `site/data/intake.json`. Public issues and pull requests relate to dashboard tasks through a standalone `Task: kernel-001` line, or through a PR’s closing reference to a linked issue. The dashboard then shows contributor and label filters, linked issues and PRs, and a New issue link. Implementation progress continues to follow the spec and evidence process above.
+
+Design tokens and component patterns were adapted from the authorized Snippet Manager template. The Geist Mono font and Lucide icons carry their respective [OFL](site/assets/geist-OFL.txt) and [license](site/assets/lucide-LICENSE.txt).

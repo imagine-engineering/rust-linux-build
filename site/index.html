@@ -1,86 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Reviewed development progress across the Rust Linux Kernel, Server, and Desktop workstreams.">
-  <meta name="theme-color" content="#10151b">
+  <meta name="description" content="Reviewed development progress for Rust Linux Kernel, Server, and Desktop.">
   <title>Rust Linux Build</title>
+  <script src="./assets/theme.js"></script>
   <link rel="stylesheet" href="./assets/site.css">
   <script type="module" src="./assets/dashboard.mjs"></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
-  <header class="top">
-    <div class="frame top-inner">
-      <a href="./" class="brand"><span class="brand-mark" aria-hidden="true">RL</span><span>Rust Linux Build</span></a>
-      <a href="https://github.com/imagine-engineering/rust-linux-build" class="repo">GitHub repository</a>
+  <header class="masthead">
+    <div class="frame header-inner">
+      <div class="identity">
+        <span class="mark" aria-hidden="true">RL</span>
+        <h1>Rust Linux Build</h1>
+      </div>
+      <div class="header-actions">
+        <a class="control" href="https://github.com/imagine-engineering/rust-linux-build">GitHub<span class="wide-label">&nbsp;repository</span></a>
+        <a class="control featured" id="new-issue" href="https://github.com/imagine-engineering/rust-linux-build/issues/new/choose" hidden>New issue</a>
+        <button class="control theme" type="button" id="theme" aria-label="Switch to light theme"><svg class="glyph" aria-hidden="true"><use href="./assets/icons.svg#sun"></use></svg></button>
+      </div>
     </div>
   </header>
   <main class="frame" id="main">
-    <div class="intro">
-      <div>
-        <h1>Project progress</h1>
-        <p>Track reviewed work across Kernel, Server, and Desktop.</p>
+    <div class="toolbar" aria-label="Task filters">
+      <button class="control mobile-toggle" type="button" id="rail-toggle" aria-expanded="false" aria-controls="rail"><svg class="glyph" aria-hidden="true"><use href="./assets/icons.svg#filter"></use></svg>Filters</button>
+      <div class="selectors" id="selectors">
+        <label><span class="sr-only">Status</span><select class="control" id="status-filter" disabled></select></label>
+        <label><span class="sr-only">Verification</span><select class="control" id="verification-filter" disabled></select></label>
       </div>
-      <p class="date" id="snapshot-date">Loading snapshot…</p>
+      <button class="clear" id="clear" type="button" disabled>Clear filters</button>
+      <label class="search">
+        <span class="sr-only">Search tasks by title or ID</span>
+        <svg class="glyph" aria-hidden="true"><use href="./assets/icons.svg#search"></use></svg>
+        <input class="control" type="search" id="search" placeholder="Search title or task ID" maxlength="160" autocomplete="off" disabled>
+      </label>
     </div>
 
-    <section aria-labelledby="progress-title">
-      <h2 class="visually-hidden" id="progress-title">Implementation progress</h2>
-      <div class="metrics" id="metrics">
-        <button type="button" data-status="implemented" class="metric implemented" aria-pressed="false" disabled><span class="metric-label">Implemented</span><strong>—</strong></button>
-        <button type="button" data-status="in-progress" class="metric in-progress" aria-pressed="false" disabled><span class="metric-label">In progress</span><strong>—</strong></button>
-        <button type="button" data-status="todo" class="metric todo" aria-pressed="false" disabled><span class="metric-label">To do</span><strong>—</strong></button>
-      </div>
-    </section>
+    <div class="workspace">
+      <aside class="rail" id="rail" aria-label="Workstreams and stages">
+        <nav aria-label="Workstreams">
+          <h2>Workstreams</h2>
+          <div class="workstreams" id="workstreams"></div>
+        </nav>
+        <section aria-labelledby="stages-title">
+          <h2 id="stages-title">Status</h2>
+          <div class="stages" id="stages"></div>
+          <div class="flags" id="flags"></div>
+        </section>
+      </aside>
 
-    <section class="workspace" aria-labelledby="tasks-title">
-      <div class="workstream">
-        <h2 id="tasks-title">Tasks</h2>
-        <fieldset id="workstream-picker" aria-label="Workstream" disabled>
-          <label><input type="radio" name="workstream" value="all" checked><span>All workstreams</span></label>
-          <label><input type="radio" name="workstream" value="kernel"><span>Kernel</span></label>
-          <label><input type="radio" name="workstream" value="server"><span>Server</span></label>
-          <label><input type="radio" name="workstream" value="desktop"><span>Desktop</span></label>
-        </fieldset>
-      </div>
-
-      <div class="toolbar">
-        <label class="search">
-          <span class="visually-hidden">Search tasks</span>
-          <input type="search" id="search" placeholder="Search tasks" autocomplete="off" disabled>
-        </label>
-        <label class="select-field">
-          <span class="visually-hidden">Status</span>
-          <select id="status-filter" disabled>
-            <option value="all">All statuses</option>
-            <option value="implemented">Implemented</option>
-            <option value="in-progress">In progress</option>
-            <option value="todo">To do</option>
-            <option value="blocked">Blocked</option>
-            <option value="unclear">Status unclear</option>
-          </select>
-        </label>
-        <label class="select-field">
-          <span class="visually-hidden">Verification</span>
-          <select id="verification-filter" disabled>
-            <option value="all">All verification</option>
-            <option value="not-run">Not run</option>
-            <option value="host-checked">Host checks passed</option>
-            <option value="target-verified">Target verified</option>
-            <option value="failed">Verification failed</option>
-            <option value="unknown">Verification unclear</option>
-          </select>
-        </label>
-        <button class="reset" id="clear" type="button" disabled>Clear filters</button>
-      </div>
-      <p class="result" id="result" role="status"></p>
-      <div class="task-list" id="task-list" aria-label="Task list">
-        <div class="empty">Loading reviewed tasks…</div>
-      </div>
-      <noscript><p class="empty">Enable JavaScript to browse the task list or <a href="./data/snapshot.json">open the snapshot JSON</a>.</p></noscript>
-    </section>
+      <section class="results" aria-labelledby="tasks-title">
+        <div class="list-header">
+          <h2 id="tasks-title">Tasks</h2>
+          <p id="snapshot-date">Loading snapshot…</p>
+        </div>
+        <p class="result-count" id="result" role="status"></p>
+        <div id="intake-filters" class="intake-filters" hidden>
+          <label><span class="sr-only">Contributor</span><select class="control" id="contributor"></select></label>
+          <label><span class="sr-only">Issue label</span><select class="control" id="issue-label"></select></label>
+        </div>
+        <p class="result-count" id="intake-message" role="status" hidden></p>
+        <div id="task-list"><p class="empty">Loading reviewed tasks…</p></div>
+        <noscript><p class="empty">Enable JavaScript to browse the tasks or <a href="./data/snapshot.json">open the snapshot JSON</a>.</p></noscript>
+      </section>
+    </div>
   </main>
   <footer class="frame footer">
     <span>Counts cover tasks approved for this public snapshot.</span>
@@ -88,11 +74,20 @@
   </footer>
 
   <template id="task-template">
-    <li class="task">
-      <div class="task-main"><h3></h3><p></p><div class="links" hidden></div></div>
-      <div class="task-status"><span class="primary pill"></span><span class="blocked pill" hidden>Blocked</span></div>
-      <div class="task-evidence"><span class="verification"></span><span class="design"></span></div>
+    <li>
+      <button type="button" class="task-row" aria-haspopup="dialog">
+        <span class="state-icon" aria-hidden="true"></span>
+        <span class="task-copy"><span class="task-title"></span><span class="task-meta"></span></span>
+        <span class="task-badges"></span>
+      </button>
     </li>
   </template>
+  <dialog id="detail" aria-labelledby="detail-title" aria-describedby="detail-summary">
+    <div class="detail-head"><p class="task-meta" id="detail-meta"></p><button id="detail-close" class="control" type="button" autofocus>Close</button></div>
+    <h2 id="detail-title"></h2>
+    <p class="detail-summary" id="detail-summary"></p>
+    <div class="task-badges" id="detail-badges"></div>
+    <ul class="detail-links" id="detail-links" hidden></ul>
+  </dialog>
 </body>
 </html>

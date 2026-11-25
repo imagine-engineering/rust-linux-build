@@ -1,0 +1,36 @@
+/* Theme tokens adapted from the authorized snippet-manager template. */
+:root { --snippet-radius: 8px; }
+
+:root[data-theme="light"] {
+  --snippet-background: hsl(0 0% 100%);
+  --snippet-foreground: hsl(222.2 84% 4.9%);
+  --snippet-card: hsl(0 0% 100%);
+  --snippet-popover: hsl(0 0% 100%);
+  --snippet-primary: hsl(222.2 47.4% 11.2%);
+  --snippet-primary-foreground: oklch(0.99 0 0);
+  --snippet-secondary: hsl(210 40% 96%);
+  --snippet-muted-foreground: oklch(0.5 0 0);
+  --snippet-accent: hsl(210 40% 96%);
+  --snippet-border: hsl(214.3 31.8% 91.4%);
+  --snippet-input: hsl(214.3 31.8% 91.4%);
+  --snippet-ring: hsl(222.2 84% 4.9%);
+  --snippet-sidebar: hsl(0 0% 98%);
+  --snippet-sidebar-border: oklch(0.9 0 0);
+}
+
+:root {
+  --snippet-background: oklch(0.1 0 0);
+  --snippet-foreground: oklch(0.93 0 0);
+  --snippet-card: oklch(0.12 0 0);
+  --snippet-popover: oklch(0.12 0 0);
+  --snippet-primary: #FF3C00;
+  --snippet-primary-foreground: #FCFCFC;
+  --snippet-secondary: oklch(0.2 0 0);
+  --snippet-muted-foreground: oklch(0.63 0 0);
+  --snippet-accent: oklch(0.2 0 0);
+  --snippet-border: oklch(0.25 0 0);
+  --snippet-input: oklch(0.25 0 0);
+  --snippet-ring: oklch(0.6 0.24 263);
+  --snippet-sidebar: oklch(0.15 0 0);
+  --snippet-sidebar-border: oklch(0.25 0 0);
+}
