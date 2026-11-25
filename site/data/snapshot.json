@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-25T17:32:39Z",
+  "snapshotUpdatedAt": "2026-11-25T17:40:11Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -15478,8 +15478,8 @@
       "id": "kernel-1470",
       "workstream": "kernel",
       "title": "x86 module loading · Implement module lifecycle handling",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
