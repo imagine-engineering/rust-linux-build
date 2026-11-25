@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-25T13:48:29Z",
+  "snapshotUpdatedAt": "2026-11-25T13:51:26Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -19018,8 +19018,8 @@
       "id": "kernel-1854",
       "workstream": "kernel",
       "title": "Scheduling · Implement lifecycle handling",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "implemented",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -19028,8 +19028,8 @@
       "id": "kernel-1855",
       "workstream": "kernel",
       "title": "Scheduling · Prepare core behavior",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "implemented",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -19038,8 +19038,8 @@
       "id": "kernel-1856",
       "workstream": "kernel",
       "title": "Scheduling · Implement core behavior",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "implemented",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -19048,8 +19048,8 @@
       "id": "kernel-1857",
       "workstream": "kernel",
       "title": "Scheduling · Review legacy code retirement",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "implemented",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -19058,11 +19058,12 @@
       "id": "kernel-1858",
       "workstream": "kernel",
       "title": "Scheduling · Verify verification",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "in-progress",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
-      "links": []
+      "links": [],
+      "targetVerification": "not-run"
     },
     {
       "id": "kernel-1860",
