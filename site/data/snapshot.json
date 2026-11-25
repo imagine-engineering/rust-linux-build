@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-25T15:30:26Z",
+  "snapshotUpdatedAt": "2026-11-25T15:36:22Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -79,7 +79,7 @@
       "workstream": "kernel",
       "title": "Kernel builds · Define rejection cases",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -149,7 +149,7 @@
       "workstream": "kernel",
       "title": "Kernel verification · Review admission checks",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -159,7 +159,7 @@
       "workstream": "kernel",
       "title": "Kernel verification · Define rejection cases",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -168,7 +168,7 @@
       "id": "kernel-072",
       "workstream": "kernel",
       "title": "Kernel integration · Implement core behavior",
-      "status": "implemented",
+      "status": "unclear",
       "verification": "unknown",
       "blocked": false,
       "design": null,
@@ -309,7 +309,7 @@
       "workstream": "kernel",
       "title": "Kernel integration · Implement memory layout",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -319,7 +319,7 @@
       "workstream": "kernel",
       "title": "Kernel integration · Develop boundary checks",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -329,7 +329,7 @@
       "workstream": "kernel",
       "title": "Kernel integration · Review dependencies",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -339,7 +339,7 @@
       "workstream": "kernel",
       "title": "Kernel integration · Define core behavior",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -349,7 +349,7 @@
       "workstream": "kernel",
       "title": "Kernel integration · Review legacy code retirement",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -439,7 +439,7 @@
       "workstream": "kernel",
       "title": "Scheduling · Define comparative checks",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -449,7 +449,7 @@
       "workstream": "kernel",
       "title": "Filesystem interfaces · Define comparative checks",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -459,7 +459,7 @@
       "workstream": "kernel",
       "title": "Container isolation · Define comparative checks",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -469,7 +469,7 @@
       "workstream": "kernel",
       "title": "Kernel security policy · Define comparative checks",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -479,7 +479,7 @@
       "workstream": "kernel",
       "title": "Asynchronous messaging · Define comparative checks",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -489,7 +489,7 @@
       "workstream": "kernel",
       "title": "Kernel observability · Define comparative checks",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -499,7 +499,7 @@
       "workstream": "kernel",
       "title": "Process lifecycle · Define comparative checks",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -529,7 +529,7 @@
       "workstream": "kernel",
       "title": "Process lifecycle · Prepare test fixtures",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -539,7 +539,7 @@
       "workstream": "kernel",
       "title": "Filesystem interfaces · Prepare test fixtures",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -549,7 +549,7 @@
       "workstream": "kernel",
       "title": "Container isolation · Prepare test fixtures",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -559,7 +559,7 @@
       "workstream": "kernel",
       "title": "Kernel security policy · Prepare test fixtures",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -569,7 +569,7 @@
       "workstream": "kernel",
       "title": "Asynchronous messaging · Prepare test fixtures",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -589,7 +589,7 @@
       "workstream": "kernel",
       "title": "Synchronization · Develop admission checks",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -599,7 +599,7 @@
       "workstream": "kernel",
       "title": "Synchronization · Implement admission checks",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -609,7 +609,7 @@
       "workstream": "kernel",
       "title": "Synchronization · Prepare host core behavior",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -619,7 +619,7 @@
       "workstream": "kernel",
       "title": "Synchronization · Implement core behavior",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -629,7 +629,7 @@
       "workstream": "kernel",
       "title": "Synchronization · Implement wake and cancellation behavior",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -639,7 +639,7 @@
       "workstream": "kernel",
       "title": "Synchronization · Implement core behavior",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -649,7 +649,7 @@
       "workstream": "kernel",
       "title": "Executable memory · Prepare module core behavior",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -659,7 +659,7 @@
       "workstream": "kernel",
       "title": "Executable memory · Implement test fixtures",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -669,7 +669,7 @@
       "workstream": "kernel",
       "title": "Executable memory · Implement test fixtures",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -679,7 +679,7 @@
       "workstream": "kernel",
       "title": "Executable memory · Prepare module core behavior",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -689,7 +689,7 @@
       "workstream": "kernel",
       "title": "Executable memory · Implement module build integration",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -699,7 +699,7 @@
       "workstream": "kernel",
       "title": "Synchronization · Implement x86 core behavior",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -709,7 +709,7 @@
       "workstream": "kernel",
       "title": "Synchronization · Implement Arm core behavior",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -719,7 +719,7 @@
       "workstream": "kernel",
       "title": "Synchronization · Implement core behavior",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -729,7 +729,7 @@
       "workstream": "kernel",
       "title": "Synchronization · Implement rejection cases",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -749,7 +749,7 @@
       "workstream": "kernel",
       "title": "Scheduling · Review memory layout",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -759,7 +759,7 @@
       "workstream": "kernel",
       "title": "System calls · Review memory layout",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -769,7 +769,7 @@
       "workstream": "kernel",
       "title": "Filesystem interfaces · Review memory layout",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -779,7 +779,7 @@
       "workstream": "kernel",
       "title": "Kernel security policy · Review memory layout",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -789,7 +789,7 @@
       "workstream": "kernel",
       "title": "Automatic module loading · Prepare comparative checks",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -799,7 +799,7 @@
       "workstream": "kernel",
       "title": "Automatic module loading · Prepare test fixtures",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -809,7 +809,7 @@
       "workstream": "kernel",
       "title": "Automatic module loading · Prepare test fixtures",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -819,7 +819,7 @@
       "workstream": "kernel",
       "title": "Automatic module loading · Prepare call flow",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -829,7 +829,7 @@
       "workstream": "kernel",
       "title": "Automatic module loading · Develop admission checks",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -839,7 +839,7 @@
       "workstream": "kernel",
       "title": "Module decompression · Implement metadata",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -849,7 +849,7 @@
       "workstream": "kernel",
       "title": "Module memory · Develop core behavior",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -869,7 +869,7 @@
       "workstream": "kernel",
       "title": "Background work · Define comparative checks",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -879,7 +879,7 @@
       "workstream": "kernel",
       "title": "System calls · Implement rejection cases",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -889,7 +889,7 @@
       "workstream": "kernel",
       "title": "Device I/O · Develop observability",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -899,7 +899,7 @@
       "workstream": "kernel",
       "title": "Networking · Develop queue handling",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -909,7 +909,7 @@
       "workstream": "kernel",
       "title": "Networking · Implement configuration",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -919,7 +919,7 @@
       "workstream": "kernel",
       "title": "Networking · Develop module resource release",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -929,7 +929,7 @@
       "workstream": "kernel",
       "title": "Networking · Develop module resource release",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -939,7 +939,7 @@
       "workstream": "kernel",
       "title": "System calls · Develop host comparative checks",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -949,7 +949,7 @@
       "workstream": "kernel",
       "title": "System calls · Implement configuration",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -959,7 +959,7 @@
       "workstream": "kernel",
       "title": "Kernel verification · Develop comparative checks",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -969,7 +969,7 @@
       "workstream": "kernel",
       "title": "Ext4 filesystem · Review core behavior",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -979,7 +979,7 @@
       "workstream": "kernel",
       "title": "Overlay filesystem · Review core behavior",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -989,7 +989,7 @@
       "workstream": "kernel",
       "title": "Compression · Review core behavior",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -999,7 +999,7 @@
       "workstream": "kernel",
       "title": "Module linking · Review core behavior",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -1009,7 +1009,7 @@
       "workstream": "kernel",
       "title": "Module observability · Review core behavior",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -1109,7 +1109,7 @@
       "workstream": "kernel",
       "title": "Scheduling · Prepare build integration",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -1119,7 +1119,7 @@
       "workstream": "kernel",
       "title": "Process lifecycle · Review memory layout",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -1129,7 +1129,7 @@
       "workstream": "kernel",
       "title": "Process lifecycle · Prepare interface compatibility",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -1139,7 +1139,7 @@
       "workstream": "kernel",
       "title": "Process lifecycle · Implement core behavior",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -1149,7 +1149,7 @@
       "workstream": "kernel",
       "title": "Process lifecycle · Prepare error handling",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -1159,7 +1159,7 @@
       "workstream": "kernel",
       "title": "Process lifecycle · Implement core behavior",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -1169,7 +1169,7 @@
       "workstream": "kernel",
       "title": "Process lifecycle · Review legacy code retirement",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -1179,7 +1179,7 @@
       "workstream": "kernel",
       "title": "Process lifecycle · Verify verification",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -1189,7 +1189,7 @@
       "workstream": "kernel",
       "title": "Process lifecycle · Prepare build integration",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -1199,7 +1199,7 @@
       "workstream": "kernel",
       "title": "Filesystem interfaces · Implement resource lifetime",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -1209,7 +1209,7 @@
       "workstream": "kernel",
       "title": "Filesystem interfaces · Implement resource lifetime",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -1219,7 +1219,7 @@
       "workstream": "kernel",
       "title": "Filesystem interfaces · Implement core behavior",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -1249,7 +1249,7 @@
       "workstream": "kernel",
       "title": "Filesystem interfaces · Implement file operations",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -1259,7 +1259,7 @@
       "workstream": "kernel",
       "title": "Filesystem interfaces · Implement memory layout",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -1269,7 +1269,7 @@
       "workstream": "kernel",
       "title": "Filesystem interfaces · Implement admission checks",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -1279,7 +1279,7 @@
       "workstream": "kernel",
       "title": "Filesystem interfaces · Implement lifecycle handling",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -1289,7 +1289,7 @@
       "workstream": "kernel",
       "title": "Filesystem interfaces · Implement admission checks",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
@@ -1349,7 +1349,7 @@
       "workstream": "kernel",
       "title": "Filesystem interfaces · Prepare build integration",
       "status": "implemented",
-      "verification": "unknown",
+      "verification": "host-checked",
       "blocked": false,
       "design": null,
       "links": []
