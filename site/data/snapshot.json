@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-25T15:38:53Z",
+  "snapshotUpdatedAt": "2026-11-25T16:57:50Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -13018,8 +13018,8 @@
       "id": "kernel-1222",
       "workstream": "kernel",
       "title": "Module lifetimes · Prepare call flow",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
