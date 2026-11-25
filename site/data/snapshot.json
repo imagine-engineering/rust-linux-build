@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-25T21:01:22Z",
+  "snapshotUpdatedAt": "2026-11-25T21:11:34Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -10118,8 +10118,8 @@
       "id": "kernel-924",
       "workstream": "kernel",
       "title": "System calls · Verify design options",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
