@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-26T12:20:06Z",
+  "snapshotUpdatedAt": "2026-11-26T12:59:18Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -10448,8 +10448,8 @@
       "id": "kernel-959",
       "workstream": "kernel",
       "title": "Module image validation · Define interface compatibility",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
@@ -15098,8 +15098,8 @@
       "id": "kernel-1432",
       "workstream": "kernel",
       "title": "x86 module loading · Define interface compatibility",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
