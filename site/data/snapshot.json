@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-26T09:52:37Z",
+  "snapshotUpdatedAt": "2026-11-26T10:01:39Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -13038,8 +13038,8 @@
       "id": "kernel-1224",
       "workstream": "kernel",
       "title": "Module lifetimes · Verify rejection cases",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
@@ -15508,8 +15508,8 @@
       "id": "kernel-1473",
       "workstream": "kernel",
       "title": "x86 module loading · Verify test fixtures",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
@@ -15558,8 +15558,8 @@
       "id": "kernel-1478",
       "workstream": "kernel",
       "title": "x86 module loading · Verify comparative checks",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
