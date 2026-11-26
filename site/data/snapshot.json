@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-26T00:26:21Z",
+  "snapshotUpdatedAt": "2026-11-26T09:06:38Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -10098,8 +10098,8 @@
       "id": "kernel-921",
       "workstream": "kernel",
       "title": "System calls · Define verification",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
@@ -10268,8 +10268,8 @@
       "id": "kernel-939",
       "workstream": "kernel",
       "title": "Filesystem interfaces · Define verification",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
@@ -10408,8 +10408,8 @@
       "id": "kernel-954",
       "workstream": "kernel",
       "title": "Kernel security policy · Define verification",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
@@ -19169,8 +19169,8 @@
       "id": "kernel-1870",
       "workstream": "kernel",
       "title": "Process lifecycle · Define verification",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
