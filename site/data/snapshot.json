@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-26T22:15:08Z",
+  "snapshotUpdatedAt": "2026-11-26T22:33:27Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -18918,8 +18918,8 @@
       "id": "kernel-1834",
       "workstream": "kernel",
       "title": "Module observability · Implement module ownership transitions",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
