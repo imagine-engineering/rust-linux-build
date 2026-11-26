@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-26T14:41:18Z",
+  "snapshotUpdatedAt": "2026-11-26T14:56:10Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -17338,8 +17338,8 @@
       "id": "kernel-1659",
       "workstream": "kernel",
       "title": "System calls · Develop comparative checks",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
