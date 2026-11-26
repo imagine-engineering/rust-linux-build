@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-26T09:06:38Z",
+  "snapshotUpdatedAt": "2026-11-26T09:52:37Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -13028,8 +13028,8 @@
       "id": "kernel-1223",
       "workstream": "kernel",
       "title": "Module lifetimes · Review call flow",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
@@ -15498,8 +15498,8 @@
       "id": "kernel-1472",
       "workstream": "kernel",
       "title": "x86 module loading · Implement test fixtures",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
@@ -15548,8 +15548,8 @@
       "id": "kernel-1477",
       "workstream": "kernel",
       "title": "x86 module loading · Implement comparative checks",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
@@ -16468,8 +16468,8 @@
       "id": "kernel-1572",
       "workstream": "kernel",
       "title": "Background work · Review call flow",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
@@ -16478,8 +16478,8 @@
       "id": "kernel-1573",
       "workstream": "kernel",
       "title": "Background work · Define comparative checks",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
