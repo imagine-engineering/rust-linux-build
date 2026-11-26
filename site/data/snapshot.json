@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-26T11:11:00Z",
+  "snapshotUpdatedAt": "2026-11-26T11:25:24Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -4208,8 +4208,8 @@
       "id": "kernel-243",
       "workstream": "kernel",
       "title": "Boot and startup · Review design options",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
@@ -4368,8 +4368,8 @@
       "id": "kernel-260",
       "workstream": "kernel",
       "title": "Memory allocation · Review design options",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
@@ -4648,8 +4648,8 @@
       "id": "kernel-290",
       "workstream": "kernel",
       "title": "Synchronization · Review design options",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
@@ -4788,8 +4788,8 @@
       "id": "kernel-305",
       "workstream": "kernel",
       "title": "Concurrent data lifetimes · Review design options",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
@@ -9548,8 +9548,8 @@
       "id": "kernel-863",
       "workstream": "kernel",
       "title": "Concurrent data lifetimes · Prepare build integration",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
@@ -9678,8 +9678,8 @@
       "id": "kernel-876",
       "workstream": "kernel",
       "title": "Boot and startup · Prepare build integration",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
