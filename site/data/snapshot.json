@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-26T10:01:39Z",
+  "snapshotUpdatedAt": "2026-11-26T11:11:00Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -4198,8 +4198,8 @@
       "id": "kernel-242",
       "workstream": "kernel",
       "title": "Boot and startup · Verify design options",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
@@ -4358,8 +4358,8 @@
       "id": "kernel-259",
       "workstream": "kernel",
       "title": "Memory allocation · Verify design options",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
@@ -4638,8 +4638,8 @@
       "id": "kernel-289",
       "workstream": "kernel",
       "title": "Synchronization · Verify design options",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
@@ -4778,8 +4778,8 @@
       "id": "kernel-304",
       "workstream": "kernel",
       "title": "Concurrent data lifetimes · Verify design options",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
