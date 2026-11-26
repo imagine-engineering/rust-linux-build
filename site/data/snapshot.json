@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-26T15:13:45Z",
+  "snapshotUpdatedAt": "2026-11-26T18:19:34Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -378,7 +378,7 @@
       "id": "kernel-106",
       "workstream": "kernel",
       "title": "Runtime contracts · Prepare host test fixtures",
-      "status": "implemented",
+      "status": "unclear",
       "verification": "unknown",
       "blocked": false,
       "design": null,
@@ -1558,7 +1558,7 @@
       "id": "kernel-027",
       "workstream": "kernel",
       "title": "Runtime contracts · Verify host verification",
-      "status": "in-progress",
+      "status": "unclear",
       "verification": "unknown",
       "blocked": false,
       "design": null,
@@ -1818,8 +1818,8 @@
       "id": "kernel-107",
       "workstream": "kernel",
       "title": "Runtime contracts · Implement host verification",
-      "status": "implemented",
-      "verification": "host-checked",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
