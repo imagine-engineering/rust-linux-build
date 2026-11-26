@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-26T14:09:01Z",
+  "snapshotUpdatedAt": "2026-11-26T14:41:18Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -17788,8 +17788,8 @@
       "id": "kernel-1717",
       "workstream": "kernel",
       "title": "Kernel verification · Implement exception handling",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
