@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-26T13:37:13Z",
+  "snapshotUpdatedAt": "2026-11-26T13:48:58Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -18978,8 +18978,8 @@
       "id": "kernel-1840",
       "workstream": "kernel",
       "title": "Module observability · Implement core behavior",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
