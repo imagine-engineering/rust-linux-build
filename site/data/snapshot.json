@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-26T23:33:46Z",
+  "snapshotUpdatedAt": "2026-11-26T23:41:51Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -16658,8 +16658,8 @@
       "id": "kernel-1591",
       "workstream": "kernel",
       "title": "Background work · Implement queue handling",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
