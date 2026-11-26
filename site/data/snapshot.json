@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-26T18:19:34Z",
+  "snapshotUpdatedAt": "2026-11-26T19:29:03Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -10458,8 +10458,8 @@
       "id": "kernel-960",
       "workstream": "kernel",
       "title": "Module image validation · Implement executable loading",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
