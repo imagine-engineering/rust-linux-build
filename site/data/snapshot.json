@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-26T13:20:59Z",
+  "snapshotUpdatedAt": "2026-11-26T13:37:13Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -18788,8 +18788,8 @@
       "id": "kernel-1820",
       "workstream": "kernel",
       "title": "Module linking · Implement core behavior",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
