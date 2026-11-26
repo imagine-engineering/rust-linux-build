@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-25T22:42:19Z",
+  "snapshotUpdatedAt": "2026-11-26T00:26:21Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -9958,8 +9958,8 @@
       "id": "kernel-906",
       "workstream": "kernel",
       "title": "Scheduling · Define verification",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
