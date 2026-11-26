@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-26T11:25:24Z",
+  "snapshotUpdatedAt": "2026-11-26T12:20:06Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -10928,8 +10928,8 @@
       "id": "kernel-1007",
       "workstream": "kernel",
       "title": "Kernel modules · Define interface compatibility",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
