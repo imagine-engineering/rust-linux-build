@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-27T17:30:34Z",
+  "snapshotUpdatedAt": "2026-11-27T17:47:19Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -15748,8 +15748,8 @@
       "id": "kernel-1499",
       "workstream": "kernel",
       "title": "Numeric conversion · Implement call flow",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
