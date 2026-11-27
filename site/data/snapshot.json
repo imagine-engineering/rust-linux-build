@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-27T11:06:24Z",
+  "snapshotUpdatedAt": "2026-11-27T11:11:17Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -22409,8 +22409,8 @@
       "id": "kernel-2237",
       "workstream": "kernel",
       "title": "Kernel verification · Define configuration",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
