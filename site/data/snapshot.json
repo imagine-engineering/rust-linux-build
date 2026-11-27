@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-27T06:36:43Z",
+  "snapshotUpdatedAt": "2026-11-27T07:03:18Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -10518,8 +10518,8 @@
       "id": "kernel-966",
       "workstream": "kernel",
       "title": "Module image validation · Verify verification",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
