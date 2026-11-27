@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-27T14:32:54Z",
+  "snapshotUpdatedAt": "2026-11-27T14:50:00Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -22489,8 +22489,8 @@
       "id": "kernel-2245",
       "workstream": "kernel",
       "title": "Kernel verification · Implement admission checks",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
