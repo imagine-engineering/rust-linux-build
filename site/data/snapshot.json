@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-27T18:06:12Z",
+  "snapshotUpdatedAt": "2026-11-27T19:44:50Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -17648,8 +17648,8 @@
       "id": "kernel-1698",
       "workstream": "kernel",
       "title": "System calls · Verify x86 configuration",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
