@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-27T11:45:09Z",
+  "snapshotUpdatedAt": "2026-11-27T11:55:52Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -22469,8 +22469,8 @@
       "id": "kernel-2243",
       "workstream": "kernel",
       "title": "Kernel verification · Prepare timing behavior",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
