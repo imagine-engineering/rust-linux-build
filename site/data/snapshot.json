@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-27T02:58:02Z",
+  "snapshotUpdatedAt": "2026-11-27T03:25:12Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -15618,8 +15618,8 @@
       "id": "kernel-1484",
       "workstream": "kernel",
       "title": "x86 module loading · Implement record keeping",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
