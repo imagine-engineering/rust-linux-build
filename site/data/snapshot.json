@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-27T09:57:57Z",
+  "snapshotUpdatedAt": "2026-11-27T10:11:17Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -10618,8 +10618,8 @@
       "id": "kernel-976",
       "workstream": "kernel",
       "title": "Module image validation · Implement metadata",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
