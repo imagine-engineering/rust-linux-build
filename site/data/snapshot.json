@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-27T11:55:52Z",
+  "snapshotUpdatedAt": "2026-11-27T13:03:02Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -22419,8 +22419,8 @@
       "id": "kernel-2238",
       "workstream": "kernel",
       "title": "Kernel verification · Implement core behavior",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
