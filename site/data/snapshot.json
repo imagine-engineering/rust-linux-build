@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-27T04:40:11Z",
+  "snapshotUpdatedAt": "2026-11-27T05:47:56Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -17808,8 +17808,8 @@
       "id": "kernel-1719",
       "workstream": "kernel",
       "title": "Kernel verification · Verify host record keeping",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
