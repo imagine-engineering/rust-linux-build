@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-27T14:21:07Z",
+  "snapshotUpdatedAt": "2026-11-27T14:32:54Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -22519,8 +22519,8 @@
       "id": "kernel-2248",
       "workstream": "kernel",
       "title": "Kernel verification · Prepare lifecycle handling",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
