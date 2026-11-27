@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-27T01:50:54Z",
+  "snapshotUpdatedAt": "2026-11-27T02:06:16Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -11668,8 +11668,8 @@
       "id": "kernel-1081",
       "workstream": "kernel",
       "title": "Kernel modules · Develop rejection cases",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
