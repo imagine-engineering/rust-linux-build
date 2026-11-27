@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-27T20:12:53Z",
+  "snapshotUpdatedAt": "2026-11-27T20:54:17Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -11648,8 +11648,8 @@
       "id": "kernel-1079",
       "workstream": "kernel",
       "title": "Kernel modules · Define test fixtures",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
