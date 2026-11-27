@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-27T00:31:13Z",
+  "snapshotUpdatedAt": "2026-11-27T01:10:36Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -15588,8 +15588,8 @@
       "id": "kernel-1481",
       "workstream": "kernel",
       "title": "x86 module loading · Define interface compatibility",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
