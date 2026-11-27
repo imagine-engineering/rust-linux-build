@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-27T22:10:03Z",
+  "snapshotUpdatedAt": "2026-11-27T23:20:41Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -2908,8 +2908,8 @@
       "id": "kernel-030",
       "workstream": "kernel",
       "title": "Runtime contracts · Implement build integration",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
