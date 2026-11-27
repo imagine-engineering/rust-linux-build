@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-27T20:54:17Z",
+  "snapshotUpdatedAt": "2026-11-27T21:12:56Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -11658,8 +11658,8 @@
       "id": "kernel-1080",
       "workstream": "kernel",
       "title": "Kernel modules · Implement exception handling",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
