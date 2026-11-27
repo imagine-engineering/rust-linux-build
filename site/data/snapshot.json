@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-27T23:20:41Z",
+  "snapshotUpdatedAt": "2026-11-27T23:23:31Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -2928,8 +2928,8 @@
       "id": "kernel-032",
       "workstream": "kernel",
       "title": "Runtime contracts · Define configuration",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
