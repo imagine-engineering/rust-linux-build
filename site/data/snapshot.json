@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-27T11:31:03Z",
+  "snapshotUpdatedAt": "2026-11-27T11:39:20Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -22449,8 +22449,8 @@
       "id": "kernel-2241",
       "workstream": "kernel",
       "title": "Kernel verification · Prepare host ownership transitions",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
