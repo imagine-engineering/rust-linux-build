@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-27T13:03:02Z",
+  "snapshotUpdatedAt": "2026-11-27T13:09:20Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -22479,8 +22479,8 @@
       "id": "kernel-2244",
       "workstream": "kernel",
       "title": "Kernel verification · Prepare rejection cases",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
