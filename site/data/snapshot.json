@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-27T23:56:25Z",
+  "snapshotUpdatedAt": "2026-11-27T23:57:41Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -2858,8 +2858,8 @@
       "id": "kernel-010",
       "workstream": "kernel",
       "title": "Kernel integration · Verify recovery",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
