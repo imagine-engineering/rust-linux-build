@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-28T00:37:06Z",
+  "snapshotUpdatedAt": "2026-11-28T00:42:52Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -3118,8 +3118,8 @@
       "id": "kernel-105",
       "workstream": "kernel",
       "title": "Background work · Implement build integration",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
