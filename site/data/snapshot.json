@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-28T00:18:55Z",
+  "snapshotUpdatedAt": "2026-11-28T00:22:27Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -2988,8 +2988,8 @@
       "id": "kernel-055",
       "workstream": "kernel",
       "title": "Kernel verification · Define x86 interface compatibility",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
