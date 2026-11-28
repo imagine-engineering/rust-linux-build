@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-27T23:59:23Z",
+  "snapshotUpdatedAt": "2026-11-28T00:01:57Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -2868,8 +2868,8 @@
       "id": "kernel-011",
       "workstream": "kernel",
       "title": "Kernel integration · Review verification",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
