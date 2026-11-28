@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-28T00:10:41Z",
+  "snapshotUpdatedAt": "2026-11-28T00:18:55Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -3108,8 +3108,8 @@
       "id": "kernel-102",
       "workstream": "kernel",
       "title": "Background work · Develop configuration",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
