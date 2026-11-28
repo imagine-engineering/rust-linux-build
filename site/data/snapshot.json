@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-28T00:32:41Z",
+  "snapshotUpdatedAt": "2026-11-28T00:34:17Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -3068,8 +3068,8 @@
       "id": "kernel-064",
       "workstream": "kernel",
       "title": "Kernel verification · Verify comparative checks",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
