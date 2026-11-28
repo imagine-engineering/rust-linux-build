@@ -1,6 +1,6 @@
 {
   "schema": "rust-linux-build.snapshot/v1",
-  "snapshotUpdatedAt": "2026-11-28T00:42:52Z",
+  "snapshotUpdatedAt": "2026-11-28T01:42:31Z",
   "tasks": [
     {
       "id": "kernel-001",
@@ -2918,8 +2918,8 @@
       "id": "kernel-031",
       "workstream": "kernel",
       "title": "Runtime contracts · Prepare observability",
-      "status": "todo",
-      "verification": "not-run",
+      "status": "unclear",
+      "verification": "unknown",
       "blocked": false,
       "design": null,
       "links": []
